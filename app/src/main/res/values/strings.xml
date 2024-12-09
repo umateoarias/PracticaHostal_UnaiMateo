@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PracticaHostal_UnaiMateo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="info_hostal">Situat en un dels pobles més encantadors i pintorescos del Pirineu català, el nostre hostal combina l’encant tradicional aranès amb totes les comoditats modernes per garantir una estada inoblidable.
+        \n\n Baguergue, conegut com un dels pobles més bonics d’Espanya, és el punt de partida ideal per explorar la riquesa natural, cultural i gastronòmica de la regió.</string>
+    <string name="serveis_hostal"> \t-Allotjament còmode i acollidor: Habitacions amb vista a les muntanyes i decoració típica de la Vall d’Aran.\n
+        \t-Esmorzars casolans: Amb productes locals com embotits, formatges i melmelades artesanes.\n
+        \t-Restaurant de cuina tradicional aranesa: Gaudeix de plats típics com l’olla aranesa o els cèps de temporada.\n
+        \t-Wi-Fi gratuït i espais acollidors per relaxar-te després d’un dia ple d’aventures.\n
+        \t-Servei d’activitats: Informació i reserva d’excursions, rutes en bicicleta, senderisme i visites guiades.</string>
+    <string name="obert">obert\n</string>
+    <string name="tancat">tancat</string>
+    <string name="current_page">Current Page\n</string>
+</resources>

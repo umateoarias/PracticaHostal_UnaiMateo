@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Info" android:id="@+id/info_menu"/>
+    <item android:title="Activitats / Serveis" android:id="@+id/act_menu"/>
+<!--    <item android:title="Serveis" android:id="@+id/serveis_menu"/>-->
+    <item android:title="Reserves" android:id="@+id/reserves_menu"/>
+    <item android:title="FAQs" android:id="@+id/faq_menu"/>
+    <item android:title="Formulari de contacte" android:id="@+id/contact_menu"/>
+</menu>
