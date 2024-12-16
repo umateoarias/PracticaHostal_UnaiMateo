@@ -24,6 +24,7 @@
             android:background="@color/md_theme_primaryContainer"
             android:fontFamily="@font/dm_sans"
             android:textColor="@color/white"
+            android:id="@+id/nomTextField"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -43,7 +44,8 @@
             android:layout_height="wrap_content"
             android:background="@color/md_theme_primaryContainer"
             android:fontFamily="@font/dm_sans"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:id="@+id/cognomsTextField"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -62,7 +64,8 @@
             android:layout_height="wrap_content"
             android:background="@color/md_theme_primaryContainer"
             android:fontFamily="@font/dm_sans"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:id="@+id/emailTextField"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -81,7 +84,8 @@
             android:layout_height="wrap_content"
             android:background="@color/md_theme_primaryContainer"
             android:fontFamily="@font/dm_sans"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:id="@+id/telefTextField"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -145,6 +149,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:hint="DATES ESCOLLIDES"
+            android:id="@+id/textDates"
             android:textColor="@color/white" />
 
     </LinearLayout>
@@ -158,5 +163,23 @@
         android:layout_marginTop="25dp"
         android:fontFamily="@font/dm_sans"
         android:backgroundTint="@color/md_theme_onPrimaryContainer"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_action_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/app_name"
+            android:backgroundTint="@color/md_theme_onPrimaryContainer"
+            app:srcCompat="@drawable/outline_shopping_cart_24"
+            app:tint="@color/white"
+            />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </LinearLayout>
