@@ -1,5 +1,6 @@
 package com.example.practicahostal_unaimateo
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Parcel
 import android.os.Parcelable
@@ -79,11 +80,16 @@ class ReservesFragment : Fragment() {
                 binding.emailTextField.text.toString(),
                 binding.telefTextField.text.toString(),
                 if(binding.radioB1.isChecked){1}else if(binding.radioB2.isChecked){2}else{3},
-                Date.valueOf(dataInici),Date.valueOf(dataFinal), 0.0
+                dataInici,dataFinal, 0.0
             )
             reserva.preu = calculatePreu(reserva)
             reserves += reserva
             Toast.makeText(this.context,"Reserva afegida", Toast.LENGTH_LONG).show()
+        }
+
+        binding.floatingActionButton.setOnClickListener {
+            val intent = Intent(this.context,cartActivity::class.java)
+            this.context?.startActivity(intent)
         }
         return binding.root
     }

@@ -14,16 +14,16 @@
         android:layout_gravity="center_horizontal"
         android:hint="Nom"
         android:textAlignment="center"
-        android:textColorHint="@color/black"
-        app:boxStrokeColor="@color/black"
-        app:hintTextColor="@color/black">
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/md_theme_primaryContainer"
             android:fontFamily="@font/dm_sans"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:id="@+id/nomTextField"
             />
 
@@ -36,15 +36,15 @@
         android:layout_marginTop="25dp"
         android:hint="Cognoms"
         android:textAlignment="center"
-        android:textColorHint="@color/black"
-        app:hintTextColor="@color/black">
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/md_theme_primaryContainer"
             android:fontFamily="@font/dm_sans"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:id="@+id/cognomsTextField"/>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -56,15 +56,15 @@
         android:layout_marginTop="25dp"
         android:hint="Adreça electronica"
         android:textAlignment="center"
-        android:textColorHint="@color/black"
-        app:hintTextColor="@color/black">
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/md_theme_primaryContainer"
             android:fontFamily="@font/dm_sans"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:id="@+id/emailTextField"/>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -76,15 +76,15 @@
         android:layout_marginTop="25dp"
         android:hint="Numero Telefon"
         android:textAlignment="center"
-        android:textColorHint="@color/black"
-        app:hintTextColor="@color/black">
+        android:textColorHint="@color/white"
+        app:hintTextColor="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/md_theme_primaryContainer"
             android:fontFamily="@font/dm_sans"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:id="@+id/telefTextField"/>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -148,7 +148,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:hint="DATES ESCOLLIDES"
             android:id="@+id/textDates"
             android:textColor="@color/white" />
 
@@ -173,7 +172,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
-            android:layout_margin="16dp"
+            android:layout_marginBottom="78dp"
+            android:layout_marginEnd="16dp"
             android:contentDescription="@string/app_name"
             android:backgroundTint="@color/md_theme_onPrimaryContainer"
             app:srcCompat="@drawable/outline_shopping_cart_24"

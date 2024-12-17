@@ -1,8 +1,10 @@
 package com.example.practicahostal_unaimateo
 
+import java.text.SimpleDateFormat
 import java.time.Instant
 import java.util.Calendar
 import java.util.Date
+import java.util.Locale
 
 data class Reserva(
     val numReserva: Int,
@@ -11,8 +13,8 @@ data class Reserva(
     val email : String,
     val numTelefon : String,
     val tipusHab : Int,
-    val dataInici : Date,
-    val dataFinal : Date,
+    val dataInici : String,
+    val dataFinal : String,
     var preu : Double
 )
 
@@ -21,7 +23,8 @@ var reserves = listOf<Reserva>()
 fun calculatePreu(reserva: Reserva):Double{
     val preuCalc: Double = 0.0
     val calendar = Calendar.getInstance()
-    calendar.time = reserva.dataInici
+    val dateFormat = SimpleDateFormat("dd/MM/yyyy", Locale.getDefault())
+    calendar.time = dateFormat.parse(reserva.dataInici)
 
     val day = calendar.get(Calendar.DAY_OF_MONTH)
     val month = calendar.get(Calendar.MONTH) // Los meses en Calendar van de 0 (enero) a 11 (diciembre)
