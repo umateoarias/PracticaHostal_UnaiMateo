@@ -6,6 +6,7 @@ import android.os.Parcelable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.util.Pair
 import androidx.fragment.app.Fragment
 import com.example.practicahostal_unaimateo.databinding.FragmentReservesBinding
@@ -78,9 +79,11 @@ class ReservesFragment : Fragment() {
                 binding.emailTextField.text.toString(),
                 binding.telefTextField.text.toString(),
                 if(binding.radioB1.isChecked){1}else if(binding.radioB2.isChecked){2}else{3},
-                Date.valueOf(dataInici),Date.valueOf(dataFinal)
+                Date.valueOf(dataInici),Date.valueOf(dataFinal), 0.0
             )
+            reserva.preu = calculatePreu(reserva)
             reserves += reserva
+            Toast.makeText(this.context,"Reserva afegida", Toast.LENGTH_LONG).show()
         }
         return binding.root
     }
