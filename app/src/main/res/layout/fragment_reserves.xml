@@ -8,26 +8,27 @@
     android:orientation="vertical"
     tools:context=".ReservesFragment">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:hint="Nom"
-        android:textAlignment="center"
-        android:textColorHint="@color/white"
-        app:boxStrokeColor="@color/white"
-        app:hintTextColor="@color/white">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:background="@color/md_theme_primaryContainer"
-            android:fontFamily="@font/dm_sans"
-            android:textColor="@color/black"
-            android:id="@+id/nomTextField"
-            />
+            android:layout_gravity="center"
+            android:hint="Nom"
+            android:textAlignment="center"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/white"
+            app:hintTextColor="@color/white">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nomTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_theme_primaryContainer"
+                android:fontFamily="@font/dm_sans"
+                android:textColor="@color/black" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="250dp"
@@ -40,12 +41,12 @@
         app:hintTextColor="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/cognomsTextField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/md_theme_primaryContainer"
             android:fontFamily="@font/dm_sans"
-            android:textColor="@color/black"
-            android:id="@+id/cognomsTextField"/>
+            android:textColor="@color/black" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -60,12 +61,12 @@
         app:hintTextColor="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailTextField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/md_theme_primaryContainer"
             android:fontFamily="@font/dm_sans"
-            android:textColor="@color/black"
-            android:id="@+id/emailTextField"/>
+            android:textColor="@color/black" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -80,12 +81,12 @@
         app:hintTextColor="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/telefTextField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/md_theme_primaryContainer"
             android:fontFamily="@font/dm_sans"
-            android:textColor="@color/black"
-            android:id="@+id/telefTextField"/>
+            android:textColor="@color/black" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -145,23 +146,37 @@
         android:gravity="center">
 
         <TextView
+            android:id="@+id/textDates"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:id="@+id/textDates"
             android:textColor="@color/white" />
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
     <Button
+        android:id="@+id/reservar_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reservar"
-        android:id="@+id/reservar_button"
         android:layout_gravity="center"
-        android:layout_marginTop="25dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/md_theme_onPrimaryContainer"
         android:fontFamily="@font/dm_sans"
-        android:backgroundTint="@color/md_theme_onPrimaryContainer"/>
+        android:text="Reservar" />
+    <ImageButton
+        android:id="@+id/info_button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/cell_border"
+        android:src="@drawable/outline_info_24" />
+    </LinearLayout>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -172,13 +187,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
-            android:layout_marginBottom="78dp"
             android:layout_marginEnd="16dp"
-            android:contentDescription="@string/app_name"
+            android:layout_marginBottom="78dp"
             android:backgroundTint="@color/md_theme_onPrimaryContainer"
+            android:contentDescription="@string/app_name"
             app:srcCompat="@drawable/outline_shopping_cart_24"
-            app:tint="@color/white"
-            />
+            app:tint="@color/white" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

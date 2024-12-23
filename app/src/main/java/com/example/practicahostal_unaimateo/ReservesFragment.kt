@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.core.util.Pair
 import androidx.fragment.app.Fragment
 import com.example.practicahostal_unaimateo.databinding.FragmentReservesBinding
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.datepicker.CalendarConstraints
 import com.google.android.material.datepicker.CalendarConstraints.DateValidator
 import com.google.android.material.datepicker.MaterialDatePicker
@@ -71,6 +72,11 @@ class ReservesFragment : Fragment() {
 
                 binding.textDates.setText(dataInici + " - " + dataFinal)
             }
+        }
+        binding.infoButton.setOnClickListener{
+            var bottomSheet = BottomSheetDialog(this.requireContext())
+            bottomSheet.setContentView(R.layout.bottom_sheet_layout)
+            bottomSheet.show()
         }
         binding.reservarButton.setOnClickListener {
             val reserva = Reserva(

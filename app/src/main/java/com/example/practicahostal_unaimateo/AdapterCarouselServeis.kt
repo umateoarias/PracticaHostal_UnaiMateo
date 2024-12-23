@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
@@ -31,5 +32,20 @@ class AdapterCarouselServeis(val llista: List<Servei>) :
         holder.nom.setText(llista[position].nom)
         Glide.with(parent).load(llista[position].img_url)
             .placeholder(R.drawable.ic_launcher_foreground).into(holder.imatge)
+        holder.itemView.setOnClickListener {
+            val dialogView = LayoutInflater.from(parent.context).inflate(R.layout.dialog_layout, null)
+            var dialogBuilder = AlertDialog.Builder(parent.context)
+            dialogBuilder.setView(dialogView)
+
+            val title = dialogView.findViewById<TextView>(R.id.titol_dialog)
+            title.setText(llista[position].nom)
+            val desc = dialogView.findViewById<TextView>(R.id.desc_dialog)
+            desc.setText(llista[position].descripcio)
+            val image = dialogView.findViewById<ImageView>(R.id.image_dialog)
+            Glide.with(parent).load(llista[position].img_url).into(image)
+
+            var dialog = dialogBuilder.create()
+            dialog.show()
+        }
     }
 }
